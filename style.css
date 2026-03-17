@@ -1,0 +1,187 @@
+:root {
+    --primary-color: #2563eb;
+    /* Blue for Add */
+    --hover-primary: #1d4ed8;
+    --edit-color: #f59e0b;
+    /* Orange for Edit */
+    --hover-edit: #d97706;
+    --delete-color: #ef4444;
+    /* Red for Delete */
+    --hover-delete: #dc2626;
+    --bg-light: #f3f4f6;
+    --card-bg: #ffffff;
+    --text-main: #1f2937;
+    --text-muted: #6b7280;
+    --success-bg: #d1fae5;
+    --success-text: #065f46;
+    --error-bg: #fee2e2;
+    --error-text: #991b1b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-main);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 550px;
+}
+
+.card {
+    background: var(--card-bg);
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #111827;
+}
+
+/* Alerts */
+.alert {
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.alert-success {
+    background-color: var(--success-bg);
+    color: var(--success-text);
+}
+
+.alert-error {
+    background-color: var(--error-bg);
+    color: var(--error-text);
+}
+
+/* Form */
+.add-form {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+input[type="text"] {
+    flex: 1;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Interest List */
+.interest-list {
+    list-style: none;
+}
+
+.interest-item-container {
+    margin-bottom: 0.75rem;
+}
+
+.interest-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    background: #f9fafb;
+}
+
+.interest-text {
+    font-weight: 500;
+    color: #374151;
+}
+
+.actions {
+    display: flex;
+    gap: 0.4rem;
+}
+
+/* Buttons */
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--hover-primary);
+}
+
+.btn-edit {
+    background-color: var(--edit-color);
+}
+
+.btn-edit:hover {
+    background-color: var(--hover-edit);
+}
+
+.btn-danger {
+    background-color: var(--delete-color);
+}
+
+.btn-danger:hover {
+    background-color: var(--hover-delete);
+}
+
+.btn-secondary {
+    background-color: #9ca3af;
+}
+
+.btn-secondary:hover {
+    background-color: #6b7280;
+}
+
+/* Edit Form inside list */
+.edit-mode {
+    padding: 0.5rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 0.75rem;
+    background: #eff6ff;
+}
+
+.edit-form {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.hidden {
+    display: none;
+}

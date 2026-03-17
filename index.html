@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Správa zájmů (Statická ukázka)</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .preview-badge {
+            background: #fef3c7;
+            color: #92400e;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            text-align: center;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="preview-badge">⚠️ STATICKÁ UKÁZKA - Pro plnou funkci spusťte index.php přes PHP server</div>
+            <h1>Správa zájmů</h1>
+
+            <div class="alert alert-success">
+                Zájem byl úspěšně přidán. (Ukázková hláška)
+            </div>
+
+            <form class="add-form" onsubmit="return false;">
+                <input type="text" placeholder="Zadejte nový zájem..." value="Programování">
+                <button type="button" class="btn btn-primary">Přidat</button>
+            </form>
+
+            <ul class="interest-list">
+                <li class="interest-item-container">
+                    <div class="interest-item">
+                        <span class="interest-text">Web Development</span>
+                        <div class="actions">
+                            <button class="btn btn-edit">Upravit</button>
+                            <button class="btn btn-danger">Smazat</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="interest-item-container">
+                    <div class="interest-item">
+                        <span class="interest-text">Cybersecurity</span>
+                        <div class="actions">
+                            <button class="btn btn-edit">Upravit</button>
+                            <button class="btn btn-danger">Smazat</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="interest-item-container">
+                    <div class="interest-item">
+                        <span class="interest-text">Artificial Intelligence</span>
+                        <div class="actions">
+                            <button class="btn btn-edit">Upravit</button>
+                            <button class="btn btn-danger">Smazat</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
